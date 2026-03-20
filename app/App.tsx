@@ -19,13 +19,13 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function App() {
   return (
    
-      <Stack>
+      <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} options={{title:"Європротокол"}}/>
         <Stack.Screen name="DateTime" component={DateTimeScreen} options={{title:"Дата та час ДТП"}}/>
         <Stack.Screen name="DriverA" component={DriverAScreen} options={{title:"Водій А"}}/>
         <Stack.Screen name="LicenseA" component={LicenseAScreen} options={{title:"Посвідчення водія"}}/>
         <Stack.Screen name="Damage" component={DamageScreen} options={{title:"Пошкодження"}}/>
-      </Stack>
+      </Stack.Navigator>
    
   );
 }
